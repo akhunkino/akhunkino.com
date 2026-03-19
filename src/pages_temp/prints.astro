@@ -1,0 +1,31 @@
+---
+import H1 from "../components/h1.astro";
+import InfoLayout from "../layouts/InfoLayout.astro";
+---
+
+<InfoLayout>
+     <div class="p-4 sm:pt-8 sm:px-12 pb-20 min-h-dvh">
+          <div class="space-y-8 sm:space-y-12">
+               <H1>
+                    Prints available on 
+                    <a 
+                         href="https://fineartamerica.com/profiles/akhunkino" 
+                         target="_blank" 
+                         rel="noopener noreferrer"
+                         class="text-zinc-300 hover:text-white underline underline-offset-4 decoration-zinc-600 transition-colors"
+                    >
+                         Fine Art America
+                    </a>
+               </H1>
+               
+               {/* Увеличенное фото */}
+               <div class="w-full max-w-3xl mx-auto md:mx-0">
+                    <img 
+                         src="/images/FAA.jpg" 
+                         alt="Fine Art America Prints" 
+                         class="w-full h-auto rounded-lg shadow-2xl hover:shadow-3xl transition-shadow duration-300"
+                    />
+               </div>
+          </div>
+     </div>
+</InfoLayout>
